@@ -20,3 +20,22 @@
 6. null => special keyword denoting a null value
 7. Symbol =>  it is immutable (can't changed ) and are unique .
 8. bigint => an integer with arbitrary precision.
+
+# OPERATORS:-
+
+1. Arithmetic Operators:-
+    a.   + (Addition) => add on two operands 
+    b.  - (Subtraction) => subtraction on two operands.
+    c.   * (Multiplication) => multiply  on two operands.
+    d.   / (Division) => division on two operands (divide the numerator by the denominator).
+    e.   % (Modulus, remainder) =>  it gives a remainder of an integer division. 
+    f.   ** (Exponentiation) => give the power of the first operator raised to the second operator.
+    #   for example :- 
+                       let a = 3;
+                       let b = 2;
+                       console.log (3 ** 2) // 9 (3 raised to the power of 2).
+
+2.                      
+
+
+
