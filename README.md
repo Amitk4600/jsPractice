@@ -24,8 +24,9 @@
 # OPERATORS:-
 
 1. Arithmetic Operators:-
-    a.   + (Addition) => add on two operands 
-    b.  - (Subtraction) => subtraction on two operands.
+
+    .a.   + (Addition) => add on two operands 
+   . b.  - (Subtraction) => subtraction on two operands.
     c.   * (Multiplication) => multiply  on two operands.
     d.   / (Division) => division on two operands (divide the numerator by the denominator).
     e.   % (Modulus, remainder) =>  it gives a remainder of an integer division. 
