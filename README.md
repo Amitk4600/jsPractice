@@ -45,7 +45,71 @@
                        let b = 2;
                        console.log (3 ** 2) // 9 (3 raised to the power of 2).
 
-2.                      
+2. Comparison Operators:
+
+   a.     == (Equality)
+
+   b.     === (Strict equality)
+
+   c.     != (Inequality)
+
+   d.     !== (Strict inequality)
+
+   e.     > (Greater than)
+
+   f.     < (Less than)
+
+   g.     >= (Greater than or equal to)
+
+   h.     <= (Less than or equal to)
 
 
+3. Logical Operators:
 
+      a.      && (Logical AND)
+
+      b.      || (Logical OR)
+
+      c.      ! (Logical NOT)
+
+4. Assignment Operators:
+
+        a.     = (Assignment)
+
+        b.    += (Addition assignment)
+
+        c.    -= (Subtraction assignment)
+
+        e.    *= (Multiplication assignment)
+
+        f.    /= (Division assignment)
+
+        g.    %= (Modulus assignment)
+
+        h.    **= (Exponentiation assignment)
+
+5. Bitwise Operators:
+
+        a.   & (Bitwise AND)
+
+        b.   | (Bitwise OR)
+
+        c.   ^ (Bitwise XOR)
+
+        d.  ~ (Bitwise NOT)
+
+        e.  << (Left shift)
+
+        f.  >> (Right shift)
+
+        g.  >>> (Unsigned right shift)
+
+6. Conditional (Ternary) Operator:
+
+            ? : (Conditional or ternary operator)
+
+7. Type Operators:
+
+        a.    typeof (Returns the type of a value)
+
+        b.    instanceof (Checks if an object is an instance of a particular class or constructor)
