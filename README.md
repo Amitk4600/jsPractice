@@ -23,7 +23,31 @@
 
 # Note :-
    1.  Primitive data types:- String, bollean, undefined,number,null
-   2.  non-primitive data types:- object,array
+   2.  non-primitive data types:- object,array.
+
+   # Naming conventions:-
+    => variables names should begin with either a letter or an underscore( _ ) or dollar sign( $ ).
+    1. let name = "amit";
+    2. let Name = "amit";
+    3. let _name = "amit";
+    4. let $name = "amit";
+
+    . variables names should not begin with number or special characters except the underscore and dollar  sign.
+
+    . keywords are reserved words that have a specific meaning and cannot be used as variables.
+
+    . keywords like if, else for should not be used as  variable names.
+
+    . Variables names are case-sensitive. That means name and Name are different variable names.
+
+    . To ensure consistency in naming variables adopt one of the following naming conventions in naming variables.
+
+# for example :-
+      let myName =  "amit"  => camel case.
+      let MyName = "amit" => pascal case.
+      let my_name = "amit" => snake case.
+      let 
+    
 # OPERATORS:-
 
 1. Arithmetic Operators:-
