@@ -21,6 +21,9 @@
 7. Symbol =>  it is immutable (can't changed ) and are unique .
 8. bigint => an integer with arbitrary precision.
 
+# Note :-
+   1.  Primitive data types:- String, bollean, undefined,number,null
+   2.  non-primitive data types:- object,array
 # OPERATORS:-
 
 1. Arithmetic Operators:-
