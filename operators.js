@@ -128,3 +128,71 @@ let resultOfLogicalOr = (number < 6) || (number1 > 7);
   let age = 21;
  let isUnderAge = !(age >=18);
  console.log("you are eligible ", isUnderAge);
+
+ //  Assignment Operators:
+
+/*
+                = (Assignment)
+                += (Addition assignment)
+                -= (Subtraction assignment)
+                *= (Multiplication assignment)
+                /= (Division assignment)
+                %= (Modulus assignment)
+                **= (Exponentiation assignment, ES6)
+ */
+
+            
+
+                // = (Assignment)
+                let d = 10;
+                let e  = d;
+                console.log("this assignment =",e); //10
+
+
+                // += (Addition assignment)
+let add =  15;
+let addition = 1;
+console.log("this Addition assignment =",addition += add); //16
+
+                // -= (Subtraction assignment)
+                let sub =  15;
+let subtraction = 1;
+console.log("this Subtraction assignment =",subtraction -= sub) // -14
+                // *= (Multiplication assignment)
+                let mul =  15;
+let multi= 2;
+console.log("this Multiplication assignment =",mul *= multi) // 30
+
+                // /= (Division assignment)
+
+                let div =  15;
+                let divide= 2;
+                console.log("this Division assignment =",div /= divide) // 7.5
+
+                // %= (Modulus assignment)
+
+                let mod =  15;
+                let modu= 2;
+                console.log("this Modulus assignment =",mod %= modu)  // 1
+
+                // **= (Exponentiation assignment, ES6)
+
+                let ex =  15;
+                let expo= 2;
+                console.log("this Exponentiation assignment =",ex **= expo) //225
+
+
+                // type of operator 
+
+                let numm = 12;
+                let str = "hey ";
+                let em = "";
+                let n = null;
+                let un ;
+
+                console.log("type of  numm", (typeof numm));
+                console.log("type of str", (typeof str));
+                console.log("type of em", (typeof em));
+                console.log("type of n", (typeof n));
+                console.log("type of un", (typeof un));
+              
