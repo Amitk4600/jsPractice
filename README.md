@@ -112,4 +112,20 @@
 
         a.    typeof (Returns the type of a value)
 
-        b.    instanceof (Checks if an object is an instance of a particular class or constructor)
+        b.    instanceof (Checks if an object is an instance of a particular class or constructor).
+
+
+# Conditional Statements :-
+
+1. if =>  Code to execute if the condition is true.
+
+2. else => Code to execute if the condition is false.
+
+3. elseif => .Code to execute if the condition1 is true 
+          .Code to execute if the condition1 is false than condition2 is true.    
+          .Code to execute if the condition1 is false than condition2 is false than else excute .
+
+4. switch => .The switch expression is evaluated once.
+             .The value of the expression is compared with the values of each case.
+             .If there is a match, the associated block of code is executed.
+             .If there is no match, the default code block is executed.
