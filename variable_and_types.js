@@ -28,6 +28,10 @@ const d = 20
 //  d  = 12; // its give error (if uncomment it )
 console.log(d); //  error because value of d constant cannot be changed (d = 12 try to changed  value  )
 
+// without keyword
+
+fff = 120;
+console.log("without keyword  ",fff);
 
 // DATA TYPE =>
 
