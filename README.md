@@ -141,6 +141,41 @@
 
         b.    instanceof (Checks if an object is an instance of a particular class or constructor).
 
+# MEMORY 
+
+  1. Stack =>
+            . it is use in premitive data type.
+            . original value not change, but provide a copy  
+
+   # example 
+
+            let abc = "hello";
+            let str = abc;
+
+            str = "good morning ";
+
+            console.log (abc) // hello
+            console.log (str) // good morning
+
+            
+  2. Heap => 
+            .it is use in non-premitive data type.
+            . original value will be changed.
+
+   # example 
+                 
+                 let userOne = {
+                        name : "amit",
+                        emailId : "amit@gmail.com"
+                 }
+
+                 let userTwo = userOne ;
+
+                 userTwo.name = "Anil";
+
+                 console.log (userOne ) // name: 'Anil', id: 'amit@gmail.com'
+
+
 
 # Conditional Statements :-
 
