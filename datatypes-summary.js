@@ -1,4 +1,5 @@
-//*************************  Primitive ****************************
+//*************************  Primitive **************************** 
+// Stack memory use in premitive data type  
 
 /* **************************************************************** */
 
@@ -36,7 +37,7 @@ const bigNum = 435313445522242n
 
 
 // ****************************Reference (NOn -premitive)******************************
-
+// heap memory in non- premitive 
 // array 
 
  const arr = ["heros", "naagraj"];
@@ -59,5 +60,32 @@ myfunction();
 
 // find data type 
 
-console.log(typeof bigNum);
-console.log(typeof id);
+// console.log(typeof bigNum);
+// console.log(typeof id);
+
+
+// memory
+
+// stack 
+
+let nameValue =  " amit";
+let otherName  =  nameValue;
+
+otherName = " kumar "
+
+console.log(nameValue);
+console.log(otherName);
+
+
+// heap 
+
+let user = {
+    name : "amit",
+    id : "abc@gmail.com"
+}
+
+let user1 = user;
+
+user1.id = "amit@yahoo.com";
+
+console.log(user);
