@@ -193,3 +193,214 @@
              .If there is no match, the default code block is executed.
 
  5. Ternary Operator =>            
+
+# String 
+
+ . storing and manipulating text. 
+ 
+ . Zero or more characters written inside quotes(single and double , we can writte in both ways).
+
+ . it is count from zero
+   first position 0
+   2nd position 1.
+ 
+ . all method return a new string. they don't modify the original string.
+ 
+ . String is immutable can't be changed.
+
+
+ # example
+              const str =  "Hello";
+              console.log(str ); // Hello;
+
+# methods 
+        there are following methods in strings
+
+
+ 1.       String length :-
+                       . it provide length of string.
+# example                    
+                let text =  "This is a sample text in JavaScript."
+                console.log("the length of message is :",text.length); //36
+
+ 2.       String slice():-
+                        . Extract a part of a string and extracted part in a new string  
+                        
+
+ # example 
+                       slice(startIndex, endIndex);
+
+                 let text =  "This is a sample text in JavaScript."
+                     let txt = text.slice(10,16) 
+                     let txt1 = text.slice(10) 
+                     let txt2 = text.slice(-10,-1) 
+                     console.log(txt)// sample
+                     console.log(txt1)// sample text in JavaScript."
+                     console.log(txt2)// avaScript.
+                 
+ 3.        String substring():- 
+                                it same as slice().
+
+# example 
+                     substring(startIndex, endIndex);
+                     let text =  "This is a sample text in JavaScript."
+                     let txt = text.substring(10,16)  
+                      console.log(txt) // sample
+                     
+ // 4.      String substr() => Deprecated: This feature is no longer recommended. 
+
+
+  5.      String replace() => 
+                            . replaces a specified value with another value in a string.
+
+                            . this method replaces only the first match.
+
+# example 
+                     
+                     let txt = " it is chair."
+                     let change =  txt.replace("chair", "pen");
+                     let change1 =  txt.replace(/chair/i, "pen");  // =>  for case  insensitive use regular expression.
+                    
+                     console.log(change) // it is pen
+                     console.log(change1) // it is pen
+
+  6.      String replaceAll()=>
+                               .  this method replaces all  match  character.
+
+# example 
+
+                                 let myText = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+                                console.log("replace all dog with hen :=",myText.replaceAll("dog","hen")); //The quick brown fox jumps over the lazy hen. If the hen reacted, was it really lazy?
+  7.     String toUpperCase()=>
+                               . this method convert all character in upper case
+
+# example 
+                                let txt = "hello"
+                                console.log(txt.toUpperCase()); // HELLO
+  8.      String toLowerCase() => 
+                                  . this method convert all character in lower case
+
+# example 
+
+                                 let txt = "HELLO"
+                                console.log(txt.toLowerCase()); // hello
+  9.     String concat()=>
+                         . join to string .
+
+
+# example 
+                           let txt  = "hello,"
+                           let txt1  = "how are you "
+                           let txt2 = txt.concat(txt1);
+                           console.log(txt2); // hello,how are you
+
+  10.      String trim() =>
+                        .it is remove  whitespace from both side of a character 
+ 
+# example 
+
+                                     let txt  = "        hello,               ";
+                                      console.log(txt.trim()); //hello, // here space remove both side
+
+  11.     String trimStart()=> 
+                             . remove  whitespace from start.
+
+# example 
+                                        let txt  = "        hello,               ";
+                                      console.log(txt.trimStart()); //hello,       
+
+  12.      String trimEnd() =>  
+                             . remove  whitespace from end.
+
+# example 
+                                        let txt  = "        hello,               ";
+                                      console.log(txt.trimEnd()); //        hello,
+
+  13.      String padStart()
+    
+
+# example 
+                                 let num = "5";
+                                console.log("pad:=>",num.padStart(4,0)); //0005
+                           
+  14.      String padEnd()
+
+# example 
+                               let num = "5";
+                            
+                                console.log("pad:=>",num.padEnd(5,0)); // 50000
+
+  15.      String charAt() => 
+                           . return the character at the specified index in a string.
+
+# example 
+
+                         let text = "hello"
+                          console.log(text.charAt(2)) // l
+
+  16.      String charCodeAt() =>
+                          . return the unicode  or ascii value of the charcter at the specified index in a string.
+
+
+# example 
+
+                         let text = "hello"
+                          console.log(text.charCodeAt(2)) // 76 (unicode or ascii value )
+
+
+  17.      String split()=> 
+                         . string can convert in array with split() method.
+
+
+# example 
+               a.           let team = "India, Aus,pak"
+                                const s = team.split("");
+                                console.log(s); // ["I", "n", "d", "i", "a", ",", "A", "u", "s", ",", "P", "a", "k"] =>  all character seprate.
+
+                b.                 let team = "India Aus pak"
+                                const s = team.split(" ");
+                                console.log(s); // ['India', 'Aus', 'pak']
+
+                c.                 let team = "India Aus pak"
+                                const s = team.split("Aus");
+                                console.log(s); // ['India', 'pak']
+
+
+
+  18.      String indexOf() => 
+                            .  return the index (position) the first occurrence of a string in  a string.
+
+                            . if nothing found in a string then return -1.
+
+                            .  cannot take powerful search values (regular expressions).
+
+# example 
+                                const text = "Hello, World!";
+                                const position = text.indexOf("World");
+
+                                console.log(position); // Outputs: 7
+19.        String lastIndexOf()=> 
+                            .  return the index (position) the last occurrence of a string in  a string.
+                            . if nothing found in a string then return -1.
+ # example
+                                let t = "hello world "
+                                console.log(t.lastIndexOf("d")); // 10
+
+20.        String search() =>
+                            .cannot take a second start position argument.
+                            .search() method searches a string for a string (or a regularr expression ) and returns the position of the match.
+ # example  
+                           let txt = "hello world "
+                                console.log(t.search("world")); // 6                        
+                                console.log(t.search(/world/)); // 6                        
+21.        String match()
+# example
+22.        String matchAll()
+# example
+24.        String includes()
+# example
+25.        String startsWith()
+# example
+26.        String endsWith()
+# example
