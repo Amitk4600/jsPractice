@@ -470,3 +470,89 @@
             
             let txt =  "return true if a string contains a specified value";
                                console.log(txt.endsWith("value.")) // false   
+
+
+# NUMBER METHODS
+
+1. tostring() =>
+                . return a number as string 
+
+# example
+
+        let num  = 400;
+        console.log(num.toString()); // 400
+
+2. toExponential() =>
+                    .  convert a number to its exponential form. 
+
+# example
+
+        let num  = 400;
+        console.log(num.toExponential()); // 4e+2         
+
+3. toFixedl() =>
+                    .  return a string representing the given number using fixed-point notation. 
+
+# example
+
+        let num  = 456.254552;
+        console.log(num.toFixed(2)); // 400.00    
+
+4.  toPrecision() =>
+                    .  return a string representing a number rounded to precision significant digits.(it return in round off value ) 
+
+# example
+
+        let num  = 456.854552;
+        console.log(num.toPrecision(2)); //   4.6e+2                                
+        console.log(num.toPrecision(3)); //    457                             
+        console.log(num.toPrecision(4)); //    456.9   
+
+5.  toLocaleString()  =>
+                    .  retun a string with a language-senitive representation of the given number.
+
+# example
+
+        let num  = 456854552;
+       console.log(numLocal.toLocaleString("en-US")); //456,854,552 (USA)
+    console.log(numLocal.toLocaleString("en-IN")); //45,68,54,552(INDIA)
+    console.log(numLocal.toLocaleString("de-DE")); // 456.854.552(Germany)
+
+       let numLocal1 = new Date()
+    console.log(numLocal1.toLocaleString()) //15/10/2023, 10:00:12 am (current with time )
+
+6.    Number.isInteger()=>
+                         . return a boolean value .
+                         . Returns true if the argument is an integer
+
+# example
+            let numIsInteger = 1000
+            console.log(Number.isInteger(numIsInteger)); // true 
+            let numIsInteger12 = -1000
+            console.log(Number.isInteger(numIsInteger12)); // true 
+            
+
+            let numIsInteger1 = 1000.0
+            console.log(Number.isInteger(numIsInteger1)); //true
+            let numIsInteger11 = 1000.01
+            console.log(Number.isInteger(numIsInteger11)); //false
+
+
+7.  Number.isSafeInteger()=>
+                            .Returns true if the argument is a safe integer.
+                            
+
+# example
+
+            let numSafeInt = 1021021.0;
+            console.log(Number.isSafeInteger(numSafeInt)) //true
+
+            let numSafeInt1 = 102102165413442524;
+            console.log(Number.isSafeInteger(numSafeInt1)) //false   
+
+             let numSafeInt11 = -110;
+              console.log(Number.isSafeInteger(numSafeInt11)) //true
+              
+              let numSafeInt13 = "-110";
+              console.log(Number.isSafeInteger(numSafeInt13)) //false
+
