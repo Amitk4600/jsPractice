@@ -542,7 +542,7 @@
                             .Returns true if the argument is a safe integer.
                             
 
-# example
+# example 
 
             let numSafeInt = 1021021.0;
             console.log(Number.isSafeInteger(numSafeInt)) //true
