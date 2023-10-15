@@ -394,13 +394,79 @@
                            let txt = "hello world "
                                 console.log(t.search("world")); // 6                        
                                 console.log(t.search(/world/)); // 6                        
-21.        String match()
+21.        String match() =>
+                             . return the result of matching a string against a regular expression.
+
 # example
-22.        String matchAll()
+
+                           let mat = "returns the result of matching a string against a regular expression.";
+                                const reg = /matching/;
+                                let result = mat.match(reg)
+                                console.log("-----------",result);
+
+
+                                let mat1= "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz-1234567890";
+                                const reg1  = /[C-K]/gi
+                                let result1 = mat1.match(reg1)
+                                console.log("match global",result1);
+
+
+22.        String matchAll() =>
+                              . returns as iterator containing the results of matching a string againsr a string (or a regular expression).
+
 # example
-24.        String includes()
+                                 let strMatchAll = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+                               
+                                let strRes  = strMatchAll.matchAll("and");
+                                console.log("matchAll -----------", Array.from(strRes));
+
+
+
+
+                                let strMatchAll1 = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+                               let strReg = /["and"]/gi
+                                let strRes1  = strMatchAll1.matchAll(strReg);
+                                console.log("matchAll1 -----------", Array.from(strRes1));
+
+
+24.        String includes()=> 
+                                . return true if a string contains a specified value.otherwise false
+
+                                . it is case sensitive.
 # example
-25.        String startsWith()
+                               
+                               let txt =  "return true if a string contains a specified value";
+                               console.log(txt.includes("value")) // true
+                              
+                              
+                               let txt =  "return true if a string contains a specified value";
+                               console.log(txt.includes("VALUE")) // false
+
+
+25.        String startsWith()=> 
+                               . returns true if a string begins with a specified value.
+
+                               . it is case sensitive.
 # example
-26.        String endsWith()
+
+                               let txt =  "return true if a string contains a specified value";
+                               console.log(txt.startsWith("return")) // true         
+
+                               let txt =  "return true if a string contains a specified value";
+                               console.log(txt.startsWith("Return")) // false        
+                              
+                               let txt =  "return true if a string contains a specified value";
+                               console.log(txt.startsWith("true")) // false      
+
+26.        String endsWith()=>
+                                . return true if a string ends with a specified value.otherwise false
+
+                                . it is case sensitive.
 # example
+
+            let txt =  "return true if a string contains a specified value";
+                               console.log(txt.endsWith("value")) // true    
+            
+            
+            let txt =  "return true if a string contains a specified value";
+                               console.log(txt.endsWith("value.")) // false   
