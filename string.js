@@ -100,10 +100,56 @@ let text =  "This is a sample text in JavaScript."
 
                                 let t = "hello world"
                                 console.log("last index ",t.lastIndexOf("d")); // 10
+
                                 // String search()
                           
+                                let msg = "hello GooD mOrNinG"
+                                let re = /[A-Z]/;
+                                let see = msg.search(re);
+                                let sear = console.log("seaching........", see);
+
                                 // String match()
+
+                                let mat = "returns the result of matching a string against a regular expression.";
+                                const reg = /matching/;
+                                let result = mat.match(reg)
+                                console.log("-----------",result);
+
+
+                                let mat1= "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz-1234567890";
+                                const reg1  = /[C-K]/gi
+                                let result1 = mat1.match(reg1)
+                                console.log("match global",result1);
+
+
                                 // String matchAll()
+
+                                let strMatchAll = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+                               
+                                let strRes  = strMatchAll.matchAll("and");
+                                console.log("matchAll -----------", Array.from(strRes));
+
+                                let strMatchAll1 = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+                               let strReg = /["and"]/gi
+                                let strRes1  = strMatchAll1.matchAll(strReg);
+                                console.log("matchAll1 -----------", Array.from(strRes1));
+
+
                                 // String includes()
+
+                                let strInclude = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+
+                                console.log("include ",  strInclude.includes('TRY'));
+
                                 // String startsWith()
+
+                                let strStartsWith = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+
+                                console.log("start with ",strStartsWith.startsWith("learn"));
+
+
                                 // String endsWith()
+
+                                let strEndsWith = "Learn to program with our beginner-friendly tutorials and examples. Read tutorials, try examples, write code and learn to program."
+
+                                console.log("end with ",strEndsWith.endsWith("program."));
