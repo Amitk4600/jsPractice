@@ -556,3 +556,57 @@
               let numSafeInt13 = "-110";
               console.log(Number.isSafeInteger(numSafeInt13)) //false
 
+# NUMBER PROPERTIES 
+
+1.         MAX_VALUE =>
+                       . constnt representing the largest possible number.
+                        
+
+ # example 
+            let x = Number.MAX_VAlue;
+            console.log(x) // 1.7976931348623157e+308;
+
+2.         MIN_VALUE =>
+                       . constnt representing the lowest  possible number.
+
+
+ # example 
+            let x = Number.MIN_VALUE;
+            console.log(x) // 5e-324
+
+
+3.         MAX_SAFE_INTEGER =>
+                       . constnt representing the maximum safe integer (2**53 - 1).
+
+                      
+
+
+ # example 
+            let x = Number.MAX_SAFE_INTEGER;
+            console.log(x) // 9007199254740991
+
+
+4.         MIN_SAFE_INTEGER =>
+                       . constnt representing the maximum safe integer -(2**53 - 1).
+
+
+ # example 
+            let x = Number.MIN_SAFE_INTEGER;
+            console.log(x) // -9007199254740991
+
+5.   POSITIVE_INFINITY and NEGATIVE_INFINITY =>
+                                           . 	Infinity (returned on overflow)
+                                           .	Negative infinity (returned on overflow)
+
+ # example 
+                        let pi = 1/0
+                        console.log(pi); //Infinity
+
+                        let pi1 = Number.POSITIVE_INFINITY
+                        console.log(pi1); //Infinity
+
+                        let ni = -1/0
+                        console.log(ni); //-Infinity
+
+                        let ni1 = Number.NEGATIVE_INFINITY
+                        console.log(ni1); //-Infinity
