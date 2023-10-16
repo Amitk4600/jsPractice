@@ -74,3 +74,37 @@ console.log(number);
      console.log(Number.isSafeInteger(numSafeInt11)) //true
      let numSafeInt13 = "-110";
      console.log(Number.isSafeInteger(numSafeInt13)) //false
+
+     // MAX_VALUE
+
+     let numMax = Number.MAX_VALUE;
+     console.log(numMax); // 1.7976931348623157e+308
+
+     // MIN_VALUE
+     let numMin = Number.MIN_VALUE;
+     console.log(numMin); // 5e-324
+
+
+   //   MAX_SAFE_INTEGER
+        let numMaxSafe = Number.MAX_SAFE_INTEGER;
+        console.log(numMaxSafe);  //9007199254740991
+
+      //   MIN_SAFE_INTEGER
+
+      let numMinSafe = Number.MIN_SAFE_INTEGER;
+      console.log(numMinSafe); //-9007199254740991
+
+      // POSITIVE_INFINITY and NEGATIVE_INFINITY
+
+      let pi = 1/0
+      console.log(pi); //Infinity
+
+      let pi1 = Number.POSITIVE_INFINITY
+      console.log(pi1); //Infinity
+
+      let ni = -1/0
+      console.log(ni); //-Infinity
+
+      let ni1 = Number.NEGATIVE_INFINITY
+      console.log(ni1); //-Infinity
+
